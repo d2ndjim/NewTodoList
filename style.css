@@ -18,7 +18,7 @@ html {
 
 .wrapper {
   padding: 20px;
-  max-width: 350px;
+  min-width: 500px;
   background: rgba(255, 255, 255, 0.95);
   box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -50,6 +50,13 @@ h2 {
   padding: 9px;
   width: 100%;
   margin-top: 25px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.clear-btn:hover {
+  background-color: orange;
 }
 
 .material-icons {
@@ -91,6 +98,14 @@ h2 {
 
 .add-items input {
   padding: 10px;
-  outline: 0;
   border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#item{
+  width: 80%;
+}
+
+.checked {
+  text-decoration: line-through;
+  color: grey;
 }
