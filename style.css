@@ -46,11 +46,18 @@ h2 {
 
 .clear-btn {
   text-decoration: none;
-  /* border: none; */
   background: none;
   padding: 9px;
   width: 100%;
   margin-top: 25px;
+}
+
+.material-icons {
+  cursor: pointer;
+}
+
+.material-icons:hover {
+  color:grey
 }
 
 .tasks li {

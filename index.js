@@ -1,6 +1,7 @@
-const addTasks = document.querySelector('.add-items');
+const form = document.querySelector('.add-items');
 const taskSection = document.querySelector(".tasks");
 const taskList = JSON.parse(localStorage.getItem('todos')) || [];
+const deleteBtn = document.querySelectorAll(".delete-activity");
 
 const addTask = e => {
   e.preventDefault();
@@ -12,6 +13,7 @@ const addTask = e => {
   taskList.push(task);
   displayTask(taskList);
   localStorage.setItem('todos', JSON.stringify(taskList));
+  e.target.reset();
 }
 
 const displayTask = (taskList) => {
@@ -31,5 +33,20 @@ const displayTask = (taskList) => {
   }
 };
 
-addTasks.addEventListener("submit", addTask);
+taskSection.addEventListener('click', (e) => {
+  if (e.target.classList.contains("delete-activity")) {
+    taskList.splice(e.target.parentElement, 1);
+    displayTask(taskList);
+    localStorage.setItem("todos", JSON.stringify(taskList));
+  }
+})
+
+
+
+
+form.addEventListener("submit", addTask);
+
+
+
+// deleteTask();
 displayTask(taskList);
