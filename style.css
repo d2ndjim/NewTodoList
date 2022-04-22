@@ -18,7 +18,7 @@ html {
 
 .wrapper {
   padding: 20px;
-  min-width: 500px;
+  max-width: 400px;
   background: rgba(255, 255, 255, 0.95);
   box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -99,10 +99,6 @@ h2 {
 .add-items input {
   padding: 10px;
   border: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-#item{
-  width: 80%;
 }
 
 .checked {
