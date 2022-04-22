@@ -1,0 +1,107 @@
+html {
+  box-sizing: border-box;
+  background: url("oh-la-la.jpeg") center no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.wrapper {
+  padding: 20px;
+  max-width: 400px;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin: 0;
+  font-weight: 200;
+}
+
+#submit-btn {
+  cursor: pointer;
+}
+
+#submit-btn:hover {
+  background-color: orange;
+}
+
+.tasks {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  list-style: none;
+}
+
+.clear-btn {
+  text-decoration: none;
+  background: none;
+  padding: 9px;
+  width: 100%;
+  margin-top: 25px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.clear-btn:hover {
+  background-color: orange;
+}
+
+.material-icons {
+  cursor: pointer;
+}
+
+.material-icons:hover {
+  color:grey
+}
+
+.tasks li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 10px 0;
+  font-weight: 100;
+  display: flex;
+}
+
+.tasks label {
+  flex: 1;
+  cursor: pointer;
+}
+
+.tasks input {
+  display: none;
+}
+
+.tasks input+label:before {
+  content: "⬜️";
+  margin-right: 10px;
+}
+
+.tasks input:checked+label:before {
+  content: "🌮";
+}
+
+.add-items {
+  margin-top: 20px;
+}
+
+.add-items input {
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.checked {
+  text-decoration: line-through;
+  color: grey;
+}
